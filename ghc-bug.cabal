@@ -1,0 +1,17 @@
+cabal-version:      3.0
+name:               ghc-bug
+version:            0.1.0.0
+license:            NONE
+build-type:         Simple
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  ModuleAB
+                    , ModuleC
+    build-depends:    base
+                    , barbies
+    hs-source-dirs:   src
+    default-language: Haskell2010
